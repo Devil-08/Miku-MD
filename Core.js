@@ -1378,63 +1378,78 @@ return list[Math.floor(list.length * Math.random())]
 	
  let smallinput = budy.toLowerCase()
     if (smallinput.includes('hello')) {
-      reply (`Hello *${pushname}*, I am *${BotName}*. How can i help you?`);
+      reply (`Hello ${pushname}, I am ${BotName}. How can i help you?`);
     } 
+		
+	 if (smallinput=='pratap') {
+        reply (`*My Boss is lost in another Multiverse, I lost contact with him...*`)
+    }
+	
+	
 
     if( smallinput.includes('konichiwa') || smallinput.includes('konochiwa') || smallinput.includes('konichiba') || smallinput.includes('salute')){
-      reply (`Konichiwa *${pushname}*, I am *${BotName}*. How can i help you?`);
+      reply (`Konichiwa ${pushname}, I am ${BotName}. How can i help you?`);
     }
-   
-    if (smallinput=='bot') {
-      reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Devil* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
-    }
-
-    if (smallinput=='lol') {
-        reply (`*XD*`)
-    }
-
-    if (smallinput=='op') {
-        reply (`Hehe`)
-    }
-
-    if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
-      reply (`Good morning to you too *${pushname}* ☺️. Have a great day 😇.`);
-    }
-
-    if (smallinput.includes('good night')) {
-      reply (`Good night to you too *${pushname}* 😇. Sleep well and sweet dreams.`);
-    }
-
-    if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
-      reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
-    }      
+    
 	
-    if (smallinput=='bot') {
+	
+	 if (smallinput=='bot') {
         reply ('Yes I am Alive 🫂')
     }
 	
-    if (smallinput=='ping') {
+	 if (smallinput=='ping') {
         reply ('pong')
     }
-    
-    if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('Had dinner')) {
-      reply (`*${pushname}* 😇. you feed 🥺.`);
+
+    if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
+      reply (`Good morning to you too ${pushname} ☺️. Have a great day 😇.`);
+    }
+
+	
+	if (smallinput.includes('good afthernoon')) {
+      reply ('Huh ${pushname} 😇. Wishing you an enjoyable afternoon too.');
+    }
+	
+	   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('kaise ho')) {
+      reply (`baby *${pushname}* 😇. thik hu aap batao.`);
+    }
+   
+   if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('intro')) {
+      reply (`baby *${pushname}* 😇. iam bot and my owner is mr pratap.`);
     }
     
-    if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('baby')) {
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('love you')) {
+      reply (`baby *${pushname}* 😇. i love you too 😘❤️.`);
+    }
+    
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('khana huva')) {
+      reply (`*${pushname}* 😇. aap khila do na 🥺.`);
+    }
+    
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('baby')) {
       reply (`hehe*${pushname}* mai tuje kaha se baby lag rahi hu`);
     }
     
-    if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('😂🤣')) {
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('😂🤣')) {
       reply (`baby *${pushname}* 😇. has mat pagale pyar ho jayega.`);
     }
     
-    if (smallinput.includes('aashii')|| smallinput.includes('aashu') || smallinput.includes('aashika')) {
-      reply (`Dude*${pushname}* she's my  owner bastie  🌚`);
+      if (smallinput.includes('aashii')|| smallinput.includes('aashu') || smallinput.includes('aashika')) {
+      reply (`yaar*${pushname}* o mare owner ki bastie hai 🌚`);
+    }
+	
+	
+    if (smallinput.includes('good night')) {
+      reply (`Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`);
+    }
+
+    if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
+      reply (`Mention not ${pushname} 😇. I am a bot afterall.`);
     }
 
     if (smallinput.includes('sorry')) {
       reply (`No sorry no thanks bcoz we are FRIENDS ☺️`);
+    }
 switch(command) {
 	
     case 'sc': case 'script': case 'sourcecode': {
@@ -1550,13 +1565,13 @@ case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━〈  🥵 NSFW Menu 🥵  〉━━━*\n\nahegao, ass, bdsm, cuckold, cum, ero, femdom, gangbang, foot, glasses, hentai, masturbation, orgy, panties, pussy, tentacles, things, yuri ,nsfwloli, blowjobgif, hentaivideo, trap, hneko, hwaifu`)
+        reply(` *━━━〈  ⚠️ NSFW Menu ⚠️  〉━━━*\n\nahegao, ass, bdsm, cuckold, cum, ero, femdom, gangbang, foot, glasses, hentai, masturbation, orgy, panties, pussy, tentacles, things, yuri ,nsfwloli, blowjobgif, hentaivideo, trap, hneko, hwaifu`)
     break
 
 case 'reaction': case 'react': case 'reactions': case 'r':
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
-            reply(` *━━━〈  🧣 Reactions 🧣  〉━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
+            reply(` *━━━〈  ⚡️ Reactions ⚡️  〉━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
         break   
     
 
