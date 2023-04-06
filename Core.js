@@ -1334,7 +1334,7 @@ const ftroli = {
 
 
     const menulist = `
-    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Fantox to take your WhatsApp usage into next level.
+    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Devil to take your WhatsApp usage into next level.
         
        「 System Info 」
     
@@ -1364,7 +1364,7 @@ const ftroli = {
     
     Type *-menu* or press any button below to start using *${global.BotName}*
     
-    ©️ *${global.BotName}* All Rights Reserved by: *Fantox*
+    ©️ *${global.BotName}* All Rights Reserved by: *Devil*
     `
         const qtod = m.quoted? "true":"false"
         
@@ -1386,7 +1386,7 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if (smallinput=='bot') {
-      reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
+      reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Devil* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
     }
 
     if (smallinput=='lol') {
@@ -1408,7 +1408,33 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }      
+	
+	 if (smallinput=='bot') {
+        reply ('Yes I am Alive 🫂')
+    }
+	
+	 if (smallinput=='ping') {
+        reply ('pong')
+}
+    
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('khana huva')) {
+      reply (`*${pushname}* 😇. aap khila do na 🥺.`);
+    }
+    
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('baby')) {
+      reply (`hehe*${pushname}* mai tuje kaha se baby lag rahi hu`);
+    }
+    
+      if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('😂🤣')) {
+      reply (`baby *${pushname}* 😇. has mat pagale pyar ho jayega.`);
+    }
+    
+      if (smallinput.includes('aashii')|| smallinput.includes('aashu') || smallinput.includes('aashika')) {
+      reply (`yaar*${pushname}* o mare owner ki bastie hai 🌚`);
+}
 
+    if (smallinput.includes('sorry')) {
+      reply (`No sorry no thanks bcoz we are FRIENDS ☺️`);
 switch(command) {
 	
     case 'sc': case 'script': case 'sourcecode': {
@@ -1426,7 +1452,7 @@ switch(command) {
     buttons: buttons,
     headerType: 4,
     /*contextInfo:{externalAdReply:{
-    title:"Powered by Fantox",
+    title:"Powered by Devil",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
@@ -2436,11 +2462,16 @@ if (isBanChat) return reply(mess.bangc)
  if (isBanChat) return reply(mess.bangc)
  if (!m.isGroup) return replay(mess.grouponly)
  if (!isAdmins && !isCreator) return replay(mess.useradmin)
- let teks = `「 _Tag All_ 」
+ let teks = `╭━━━≺ 𓄂⍣⃝D evil ×͜×-𝗧𝗔𝗚 ≻━━━╮
+┃ 
+┃𝗚𝗿𝗼𝘂𝗽💕: *${groupMetadata.subject}*
+┃┄┄┄┄┄┄┄┄┄┄┄
+┃𝗔𝗡𝗡𝗢𝗨𝗡𝗖𝗘𝗥👻:  @${m.sender.split('@')[0]}
+┃┄┄┄┄┄┄┄┄┄┄┄
+┃*Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
   
- *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
  for (let mem of participants) {
- teks += `» @${mem.id.split('@')[0]}\n`
+ teks += `🥵 <<@${mem.id.split('@')[0]}\n`
  }
  Miku.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
  }
@@ -4795,7 +4826,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+I am *Miku Nakano*, a bot developed by *Devil*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4869,7 +4900,7 @@ qr, say, translate, fliptext, toletter, weather
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Devil*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
