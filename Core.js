@@ -1415,7 +1415,7 @@ return list[Math.floor(list.length * Math.random())]
 	
 	 if (smallinput=='ping') {
         reply ('pong')
-}
+    }
     
       if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('khana huva')) {
       reply (`*${pushname}* 😇. aap khila do na 🥺.`);
@@ -1431,7 +1431,7 @@ return list[Math.floor(list.length * Math.random())]
     
       if (smallinput.includes('aashii')|| smallinput.includes('aashu') || smallinput.includes('aashika')) {
       reply (`yaar*${pushname}* o mare owner ki bastie hai 🌚`);
-}
+    }
 
     if (smallinput.includes('sorry')) {
       reply (`No sorry no thanks bcoz we are FRIENDS ☺️`);
